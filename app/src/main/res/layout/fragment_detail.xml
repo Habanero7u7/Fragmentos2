@@ -9,9 +9,21 @@
     <TextView
         android:id="@+id/fragment_datail_os"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:textSize="30sp" />
 
-    
+    <ImageView
+        android:id="@+id/fragment_detail_imgos"
+        android:layout_width="235dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY" />
 
+    <TextView
+        android:id="@+id/fragment_datail_desc"
+        android:layout_marginTop="210dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"/>
 </FrameLayout>

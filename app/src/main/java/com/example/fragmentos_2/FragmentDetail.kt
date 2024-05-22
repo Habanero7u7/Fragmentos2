@@ -5,10 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 
 class FragmentDetail : Fragment() {
     private lateinit var txtDetalle: TextView
+    private lateinit var imgDetalle: ImageView
+    private lateinit var descDetalle: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -18,6 +21,8 @@ class FragmentDetail : Fragment() {
 
         val view: View = inflater.inflate(R.layout.fragment_detail, container, false)
         txtDetalle = view.findViewById(R.id.fragment_datail_os)
+        imgDetalle = view.findViewById(R.id.fragment_detail_imgos)
+        descDetalle = view.findViewById(R.id.fragment_datail_desc)
         return view
     }
 
@@ -25,4 +30,11 @@ class FragmentDetail : Fragment() {
         txtDetalle.text = detalle
     }
 
+    fun cargar_imgdetalle(imgdetalle: Int){
+        imgDetalle.setImageResource(imgdetalle)
+    }
+
+    fun cargar_descdetalle(descdetalle: String){
+        descDetalle.text = descdetalle
+    }
 }
